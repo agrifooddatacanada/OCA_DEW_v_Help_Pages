@@ -1,0 +1,77 @@
+<head>
+  <style>
+    .stack {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      height: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .powered-by p {
+      text-align: left;
+      margin: 0;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 10px;
+    }
+
+    .logo-agri {
+      height: 80px;
+      width: 200px;
+      cursor: pointer;
+    }
+
+    .logo-research {
+      height: 120px;
+      cursor: pointer;
+    }
+
+    .box {
+      width: 150px;
+    }
+
+    .logo-se {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stack">
+    <div class="column">
+      <div class="powered-by">
+        <p>Powered by</p>
+        <div class="Agri food Data Canada logo-container">
+          <img src="https://github.com/agrifooddatacanada/OCA_Composer/assets/136002781/75d5efa5-15e9-4e24-abb2-1aac5a47857c" alt="Agri Logo" class="logo-agri" onclick="window.location.href='https://agrifooddatacanada.ca/'">
+        </div>
+      </div>
+      <div class="powered-by">
+        <p>Supported by</p>
+        <div class="logo-container">
+          <img src="https://github.com/agrifooddatacanada/OCA_Composer_help_pages/assets/136002781/86e6cc8a-dae2-4a32-a840-bfe7fc51780e" alt="Research Excellent Fund Logo" class="logo-research" onclick="window.location.href='https://agrifooddatacanada.ca/'">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://github.com/agrifooddatacanada/OCA_Composer_help_pages/assets/136002781/5e46d23c-1cdc-43db-8396-d7d6e0a0f35f" alt="Semantic Engine Logo" class="logo-se" onclick="window.location.href='/'">
+    </div>
+  </div>
+
+</body>
+</html>
