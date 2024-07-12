@@ -1,8 +1,11 @@
 <div>
   <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">View Schema</h1>
   <br>
+  <p>In order to verify your data against the rules in the schema, you must ensure that you match the attributes of both. Otherwise the verifier won't know which rules to apply to your dataset.</p>
   <p>
     Your attributes of your dataset may be named differently compared to the schema. You may also have more, or less, attributes compared to the schema in your dataset. The Data Verifier attempts to match attributes in the schema to attributes in your dataset. If there are incorrect or incomplete matches you can fix that here. 
   </p>
+  <p>In this figure you can see that some of the attributes (e.g. date and end_time) have been matched correctly between the dataset and the schema. Unassigned variables are those columns of data in your dataset that don't yet match a schema attribute. In the Dataset column you can select these Unassigned Variables from the dropdown list and match attributes between your dataset and schema.</p>
+  <img src="../../images/en/match_attributes.png" alt="An example of matching attributes between a dataset and a schema.">
 </div>
 
