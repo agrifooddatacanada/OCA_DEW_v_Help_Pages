@@ -1,0 +1,51 @@
+<div>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Preview Schema</h1>
+  <br>
+  
+  <h3>Schema Metadata</h3>
+  <p>The name, description, and classification is given in the current selected language for the schema. This information can help you decide if you have selected the right schema for your data.</p>
+  
+  <h3>Schema Details</h3>
+  
+  <p>Read the information about each attribute as described in the schema.</p>
+  
+  <h4>Sensitive</h4>
+  
+  <p>
+    Sensitive attributes indicate sensitive data (e.g., names of people, government identification, birth date, etc.).</p>
+ 
+  <h4>Unit</h4>
+  <p>Units for each attribute. Not all attributes need to have units.</p>
+  
+  <h4>Type</h4>
+  <ul>
+    <li>Text: text, from single-letter entries to fields of unstructured text. Numbers are text if you can't perform mathmatical operations on them, e.g. a phone number is text.</li>
+    <li>Numeric: numbers. If you can't put it into a 'calculator' and directly perform mathematical operations on it, then you have text. For example, the range "1056-1067" is text, the value a10 is text because it has a letter in the name etc.</li>
+    <li>Boolean: a data type where the data only has two possible variables: true or false</li>
+    <li>Binary: a data type that defines a binary code signal</li>
+    <li>DateTime: a data type that defines dates. Common formats include dates (e.g., YYYY-MM-DD), times (e.g., hh:mm:ss), dates and times concatenated (e.g., YYYY-MM-DDThh:mm:ss.sss+zz:zz), and durations (e.g., PnYnMnD)</li>
+    <li>Array [attribute type]: a data type that defines a structure that holds several data items or elements of the same data type</li>
+  </ul>
+  
+  <h4>Label and Description</h4>
+  <p>Attribute names can sometimes be very cryptic (e.g. v2) or in another language. The label can be a more readable version of the attribute name. The description describes the data that should appear under each attribute.</p>
+   
+  <h4>List</h4>
+  <p>
+	A list of acceptable entries that the user will be able to select from. Only those values that appear in the list would be verified as valid according to the schema rules.
+  </p>
+
+  <h4>Character Encoding</h4>
+  <p>Documents the character encoding of the data for each attribute.</p>
+
+  <h4>Required Entries</h4>
+  <p>Specifies if the attribute is required and cannot be left blank in the dataset.</p>
+
+  <h4>Format Rules</h4>
+  <p>Specifies the formatting rule that applies to the data for each attribute. Behind each rule is an Regular Expression (RegEx) which a computer interprets in order to determine if the data meets the format rule.</p>
+
+  <h4>Cardinality</h4>
+  <p>For array datatypes only, it specifies the exact, minimum or maximum (or both minimum and maximum) number of entries allowed in a data record for each attribute.</p>
+  
+
+</div>
