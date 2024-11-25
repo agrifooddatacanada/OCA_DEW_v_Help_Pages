@@ -1,0 +1,51 @@
+<div>
+  <h1 style="text-align: center; color: #94002a; font-size: 3.25rem;">Aperçu du schéma</h1>
+  <br>
+  
+  <h3>Métadonnées du schéma</h3>
+  <p>Le nom, la description et la classification sont donnés dans la langue actuellement sélectionnée pour le schéma. Ces informations peuvent vous aider à décider si vous avez sélectionné le bon schéma pour vos données.</p>
+  
+  <h3>Détails du schéma</h3>
+  
+  <p>Lisez les informations sur chaque attribut, telles que décrites dans le schéma.</p>
+  
+  <h4>Sensible</h4>
+  
+  <p>
+    Les attributs sensibles indiquent des données sensibles (par exemple, noms de personnes, identifications gouvernementales, dates de naissance, etc.).
+  </p>
+ 
+  <h4>Unité</h4>
+  <p>Unités pour chaque attribut. Tous les attributs n'ont pas besoin d'avoir des unités.</p>
+  
+  <h4>Type</h4>
+  <ul>
+    <li>Texte : texte, allant d'entrées d'une seule lettre à des champs de texte non structuré. Les nombres sont considérés comme du texte si vous ne pouvez pas effectuer d'opérations mathématiques sur eux, par exemple, un numéro de téléphone est du texte.</li>
+    <li>Numérique : nombres. Si vous ne pouvez pas l'utiliser dans une "calculatrice" pour effectuer directement des opérations mathématiques, il s'agit de texte. Par exemple, la plage "1056-1067" est du texte, la valeur a10 est du texte car elle contient une lettre, etc.</li>
+    <li>Booléen : un type de données où les données n'ont que deux variables possibles : vrai ou faux.</li>
+    <li>Binaire : un type de données qui définit un signal de code binaire.</li>
+    <li>DateHeure : un type de données qui définit les dates. Les formats courants incluent les dates (par exemple, AAAA-MM-JJ), les heures (par exemple, hh:mm:ss), les dates et heures concaténées (par exemple, AAAA-MM-JJThh:mm:ss.sss+zz:zz) et les durées (par exemple, PnYnMnD).</li>
+    <li>Tableau [type d'attribut] : un type de données qui définit une structure contenant plusieurs éléments de données du même type.</li>
+  </ul>
+  
+  <h4>Étiquette et Description</h4>
+  <p>Les noms d'attributs peuvent parfois être très cryptiques (par exemple, v2) ou dans une autre langue. L'étiquette peut être une version plus lisible du nom de l'attribut. La description décrit les données qui devraient apparaître sous chaque attribut.</p>
+   
+  <h4>Liste</h4>
+  <p>
+	Une liste des entrées acceptables que l'utilisateur pourra sélectionner. Seules les valeurs figurant dans la liste seront vérifiées comme valides selon les règles du schéma.
+  </p>
+
+  <h4>Encodage des caractères</h4>
+  <p>Documente l'encodage des caractères des données pour chaque attribut.</p>
+
+  <h4>Entrées obligatoires</h4>
+  <p>Spécifie si l'attribut est obligatoire et ne peut pas être laissé vide dans l'ensemble de données.</p>
+
+  <h4>Règles de formatage</h4>
+  <p>Spécifie la règle de formatage qui s'applique aux données pour chaque attribut. Derrière chaque règle se trouve une expression régulière (RegEx) qu'un ordinateur interprète pour déterminer si les données respectent la règle de formatage.</p>
+
+  <h4>Cardinalité</h4>
+  <p>Pour les types de données tableau uniquement, spécifie le nombre exact, minimum ou maximum (ou à la fois minimum et maximum) d'entrées autorisées dans un enregistrement de données pour chaque attribut.</p>
+  
+</div>

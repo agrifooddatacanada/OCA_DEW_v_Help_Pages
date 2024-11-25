@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voir l'aide du schéma</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #94002a;
+      color: white;
+      padding: 0px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo img {
+      height: auto;
+      width: 250px;
+    }
+
+    .left {
+      font-size:40px;
+    }
+
+    #contentContainer {
+      padding: 0px 20px;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $("#headerContainer").load("../../header.html");
+      $("#contentContainer").load("DataEntryVerificationStart.html");
+      $("#footerContainer").load("../../footer.html");
+    });
+  </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="headerContainer"></div>
+
+    <!-- Content -->
+    <main id="contentContainer"></main>
+
+    <br>
+    <hr>
+
+    <!-- Footer -->
+    <div id="footerContainer"></div>
+
+</body>
+</html>
